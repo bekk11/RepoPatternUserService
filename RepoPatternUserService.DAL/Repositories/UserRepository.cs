@@ -14,27 +14,27 @@ public class UserRepository : IUserRepository
         _context = context;
     }
     
-    public async Task<IEnumerable<User>> GetAllUsersAsync()
+    public async Task<IEnumerable<User>> GetAllUsersAsyncRepo()
     {
         return await _context.Users.ToListAsync();
     }
 
-    public Task<User> GetUserByIdAsync(int id)
+    public Task<User> GetUserByIdAsyncRepo(int id)
     {
         throw new NotImplementedException();
     }
 
-    public Task AddUserAsync(UserCreateRequestBodyTemplate model)
+    public Task AddUserAsyncRepo(UserCreateRequestBodyTemplate model)
     {
         throw new NotImplementedException();
     }
 
-    public Task UpdateAsync(UserCreateRequestBodyTemplate model)
+    public Task UpdateAsyncRepo(UserCreateRequestBodyTemplate model)
     {
         throw new NotImplementedException();
     }
 
-    public Task DeleteAsync(int id)
+    public Task DeleteAsyncRepo(int id)
     {
         throw new NotImplementedException();
     }

@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{49ABBE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoPatternUserService.Domain", "RepoPatternUserService.Domain\RepoPatternUserService.Domain.csproj", "{EBAA4980-9ABA-4C13-97C9-954B6F497FE8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{148E3291-F209-43B7-9D74-7A5F2AD92423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoPatternUserService.Service", "RepoPatternUserService.Service\RepoPatternUserService.Service.csproj", "{1C3301F2-BC50-49EF-B5D7-0A14DBC38839}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,14 @@ Global
 		{EBAA4980-9ABA-4C13-97C9-954B6F497FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBAA4980-9ABA-4C13-97C9-954B6F497FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBAA4980-9ABA-4C13-97C9-954B6F497FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3301F2-BC50-49EF-B5D7-0A14DBC38839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3301F2-BC50-49EF-B5D7-0A14DBC38839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3301F2-BC50-49EF-B5D7-0A14DBC38839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3301F2-BC50-49EF-B5D7-0A14DBC38839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C60135EB-64AB-4A15-B58A-1E97024A197D} = {BC878D79-CD7B-4689-9690-E59C264079E1}
 		{EBAA4980-9ABA-4C13-97C9-954B6F497FE8} = {49ABBE2A-D651-40E7-ABFB-B954084909B6}
+		{1C3301F2-BC50-49EF-B5D7-0A14DBC38839} = {148E3291-F209-43B7-9D74-7A5F2AD92423}
 	EndGlobalSection
 EndGlobal

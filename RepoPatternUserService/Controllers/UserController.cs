@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using RepoPatternUserService.DAL.Interfaces;
-using RepoPatternUserService.Domain.Entity;
+using RepoPatternUserService.Domain.DataTemplates;
+using RepoPatternUserService.Service.Interfaces;
 
 namespace RepoPatternUserService.Controllers;
 
@@ -9,19 +8,46 @@ namespace RepoPatternUserService.Controllers;
 [Route("user")]
 public class UserController : ControllerBase
 {
-    private readonly IUserRepository _repository;
+    private readonly IUserService _userService;
 
-    public UserController(IUserRepository userRepository)
+    public UserController(IUserService userService)
     {
-        _repository = userRepository;
+        _userService = userService;
     }
-
+    
     [HttpGet]
     [Route("list")]
     public async Task<IActionResult> GetAllUsersAsync()
     {
-        var data = await _repository.GetAllUsersAsync();
-
-        return Ok(data);
+        var res = await _userService.ListUserService();
+        return Ok(res);
+    }
+    
+    [HttpPost]
+    [Route("create")]
+    public async Task<IActionResult> CreateUserAsync(UserCreateRequestBodyTemplate user)
+    {
+        return Ok();
+    }
+    
+    [HttpGet]
+    [Route("get/{pk}")]
+    public async Task<IActionResult> GetUserByIdAsync(long pk)
+    {
+        return Ok();
+    }
+    
+    [HttpPut]
+    [Route("update/{pk}")]
+    public async Task<IActionResult> UpdateUserByIdAsync(long pk, UserCreateRequestBodyTemplate user)
+    {
+        return Ok();
+    }
+    
+    [HttpDelete]
+    [Route("delete/{pk}")]
+    public async Task<IActionResult> DeleteUserByIdAsync(long pk)
+    {
+        return Ok();
     }
 }

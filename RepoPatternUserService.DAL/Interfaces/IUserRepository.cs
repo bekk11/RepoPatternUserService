@@ -5,13 +5,13 @@ namespace RepoPatternUserService.DAL.Interfaces;
 
 public interface IUserRepository
 {
-    Task<IEnumerable<User>> GetAllUsersAsync();
+    Task<IEnumerable<User>> GetAllUsersAsyncRepo();
     
-    Task<User> GetUserByIdAsync(int id);
+    Task<User> GetUserByIdAsyncRepo(int id);
     
-    Task AddUserAsync(UserCreateRequestBodyTemplate model);
+    Task AddUserAsyncRepo(UserCreateRequestBodyTemplate model);
     
-    Task UpdateAsync(UserCreateRequestBodyTemplate model);
+    Task UpdateAsyncRepo(UserCreateRequestBodyTemplate model);
     
-    Task DeleteAsync(int id);
+    Task DeleteAsyncRepo(int id);
 }

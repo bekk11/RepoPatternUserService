@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\RepoPatternUserService.DAL\RepoPatternUserService.DAL.csproj" />
+      <ProjectReference Include="..\RepoPatternUserService.Service\RepoPatternUserService.Service.csproj" />
     </ItemGroup>
 
 </Project>
