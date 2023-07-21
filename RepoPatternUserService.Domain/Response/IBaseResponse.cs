@@ -1,4 +1,4 @@
-﻿namespace RepoPatternUserService.DAL.Response;
+﻿namespace RepoPatternUserService.Domain.Response;
 
 public interface IBaseResponse<T>
 {

@@ -25,9 +25,10 @@ public class UserController : ControllerBase
     
     [HttpPost]
     [Route("create")]
-    public async Task<IActionResult> CreateUserAsync(UserCreateRequestBodyTemplate user)
+    public async Task<IActionResult> CreateUserAsync(UserCreateRequestBodyTemplate template)
     {
-        return Ok();
+        var res = await _userService.CreateUserService(template);
+        return Ok(res);
     }
     
     [HttpGet]

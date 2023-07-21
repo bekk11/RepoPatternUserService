@@ -1,5 +1,4 @@
-﻿namespace RepoPatternUserService.DAL.Response;
-
+﻿namespace RepoPatternUserService.Domain.Response;
 public class BaseResponse<T> : IBaseResponse<T>
 {
     public bool Success { get; set; }

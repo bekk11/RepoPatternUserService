@@ -54,4 +54,18 @@ public class User
     [JsonIgnore]
     [Column("salt")] 
     public byte[] Salt { get; set; }
+    
+    
+    public void CreateUser(string firstName, string lastName, Gender gender, string passportSerNum, string pinfl, string? email, string username, byte[] passwordHash, byte[] salt)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Gender = gender;
+        PassportSerNum = passportSerNum;
+        PINFL = pinfl;
+        Email = email;
+        Username = username;
+        PasswordHash = passwordHash;
+        Salt = salt;
+    }
 }

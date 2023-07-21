@@ -9,7 +9,7 @@ public interface IUserRepository
     
     Task<User> GetUserByIdAsyncRepo(int id);
     
-    Task AddUserAsyncRepo(UserCreateRequestBodyTemplate model);
+    Task<User> AddUserAsyncRepo(UserCreateRequestBodyTemplate model);
     
     Task UpdateAsyncRepo(UserCreateRequestBodyTemplate model);
     
